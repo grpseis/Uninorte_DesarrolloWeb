@@ -52,23 +52,26 @@ def imprimir(productos):
         print(nombre, precio)
         totCompra += precio
     print("Total de la compra es de $ ", totCompra,"\n")
+    return(totCompra)
 
 
+## Principal
 apruebaPedido = 'S'
 l1=[]
 t1=()
+tootC = 0
 cargar_por_teclado()
 #listar_productos_precios()
-imprimir(l1)
-apruebaPedido = input("Desea Aprobar el pedido ? [s / n]  ")
-if apruebaPedido == "s" or apruebaPedido == "S":
-    imprimir(l1)
-    print("Compra Aprobada...\n")
-else:
-    print("Compra Cancelada...\n")
+tootC = imprimir(l1)
+if tootC > 0:
+    apruebaPedido = input("Desea Aprobar el pedido ? [s / n]  ")
+    if apruebaPedido == "s" or apruebaPedido == "S":
+        imprimir(l1)
+        print("Compra Aprobada...\n")
+    else:
+        print("Compra Cancelada...\n")
 print("presione enter para continuar...")
 input()
-
 
 
 
