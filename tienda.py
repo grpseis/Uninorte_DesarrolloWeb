@@ -51,7 +51,7 @@ def imprimir(productos):
     for nombre, precio in productos:
         print(nombre, precio)
         totCompra += precio
-    print("Total de la compra $ ", totCompra,"\n")
+    print("Total de la compra es de $ ", totCompra,"\n")
 
 
 apruebaPedido = 'S'
@@ -63,7 +63,7 @@ imprimir(l1)
 apruebaPedido = input("Desea Aprobar el pedido ? [s / n]  ")
 if apruebaPedido == "s" or apruebaPedido == "S":
     imprimir(l1)
-    print("Compra Aprobda...\n")
+    print("Compra Aprobada...\n")
 else:
     print("Compra Cancelada...\n")
 print("presione enter para continuar...")
