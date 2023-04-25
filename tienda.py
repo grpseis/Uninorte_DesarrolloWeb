@@ -60,13 +60,14 @@ t1=()
 cargar_por_teclado()
 #listar_productos_precios()
 imprimir(l1)
-apruebaPedido = input("Desea Aprobar el pedido ? [s / n]")
+apruebaPedido = input("Desea Aprobar el pedido ? [s / n]  ")
 if apruebaPedido == "s" or apruebaPedido == "S":
     imprimir(l1)
     print("Compra Aprobda...\n")
 else:
     print("Compra Cancelada...\n")
 print("presione enter para continuar...")
+input()
 
 
 
